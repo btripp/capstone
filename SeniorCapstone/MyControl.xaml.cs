@@ -25,7 +25,7 @@ namespace AugustaStateUniversity.SeniorCapstone
         
         public MyControl()
         {
-            
+            InitializeComponent();
         }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1300:SpecifyMessageBoxOptions")]
