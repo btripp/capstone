@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace AugustaStateUniversity.SeniorCapstone
 {
@@ -19,9 +20,15 @@ namespace AugustaStateUniversity.SeniorCapstone
     /// </summary>
     public partial class MyControl : UserControl
     {
+        
+        
+        
         public MyControl()
         {
-            InitializeComponent();
+            DispatcherTimer timer = new DispatcherTimer();
+            timer.Tick += new EventHandler(timer_Tick);
+            timer.Interval = new TimeSpan(0, 0, 1);
+            timer.Start();
         }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1300:SpecifyMessageBoxOptions")]
@@ -31,5 +38,14 @@ namespace AugustaStateUniversity.SeniorCapstone
                             "Will not be checked in hello");
 
         }
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            dateLabel.Content = DateTime.Now.ToLongDateString();
+            timeLabel.Content = DateTime.Now.ToLongTimeString();
+        }
+
+
+
+        
     }
 }
