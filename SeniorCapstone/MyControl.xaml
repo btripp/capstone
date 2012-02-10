@@ -12,6 +12,7 @@
         <StackPanel Orientation="Vertical">
             <TextBlock Margin="10" HorizontalAlignment="Center" Foreground="{DynamicResource {x:Static vsfx:VsBrushes.ToolWindowTextKey}}">This is a toolwindow with WPF content</TextBlock>
             <Button Content="_Click Me!" Width="80" Height="80" Name="button1" Click="button1_Click" />
+            <Label Content="i changed this" Height="28" Name="label1" />
         </StackPanel>
     </Grid>
 </UserControl>
