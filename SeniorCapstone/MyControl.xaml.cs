@@ -32,7 +32,7 @@ namespace AugustaStateUniversity.SeniorCapstone
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show(string.Format(System.Globalization.CultureInfo.CurrentUICulture, "We are inside {0}.button1_Click()", this.ToString()),
-                            "Will not be checked in hello next change testing some more");
+                            "Will not be checked in hello next change testing some more Stuff");
 
         }
        
