@@ -12,8 +12,27 @@
         <StackPanel Orientation="Vertical">
             <TextBlock Margin="10" HorizontalAlignment="Center" Foreground="{DynamicResource {x:Static vsfx:VsBrushes.ToolWindowTextKey}}">This is a toolwindow with WPF content</TextBlock>
             <Button Content="_Click Me!" Width="80" Height="80" Name="button1" Click="button1_Click" />
-            <Label Content="i changed this" Height="28" Name="label1" />
-            <Label Content="now its MY LABel" Height="86" Name="label2" FlowDirection="RightToLeft" FontSize="40" Width="300" Foreground="#FF0000E1" />
+            <TreeView Height="175" Name="treeView1" Width="276" Background="Red">
+                <TreeViewItem Header="Isle One">
+                    <TreeViewItem Header="Hello" />
+                    <TreeViewItem Header="Hello2" />
+                </TreeViewItem>
+                <TreeViewItem Header="Isle Two">
+                    <TreeViewItem Header="Something" />
+                </TreeViewItem>
+                <TreeViewItem Header="Isle Three">
+                    <TreeViewItem Header="Testing" />
+                    <TreeViewItem Header="Some Stuff" />
+                    <TreeViewItem Header="Isle Three A">
+                        <TreeViewItem Header="A" />
+                        <TreeViewItem Header="B" />
+                        <TreeViewItem Header="Another Nested!!!">
+                            <TreeViewItem Header="Hello" />
+                            <TreeViewItem Header="Hello2" />
+                        </TreeViewItem>
+                    </TreeViewItem>
+                </TreeViewItem>
+            </TreeView>
         </StackPanel>
     </Grid>
 </UserControl>
