@@ -13,14 +13,14 @@
             <TextBlock Margin="10" HorizontalAlignment="Center" Foreground="{DynamicResource {x:Static vsfx:VsBrushes.ToolWindowTextKey}}">This is a toolwindow with WPF content</TextBlock>
             <Button Content="_Click Me!" Width="80" Height="80" Name="button1" Click="button1_Click" />
             <TreeView Height="175" Name="treeView1" Width="276" Background="Red">
-                <TreeViewItem Header="Isle One">
+                <TreeViewItem Header="Isle One" Name="root" Selected="TreeViewItem_Selected">
                     <TreeViewItem Header="Hello" />
                     <TreeViewItem Header="Hello2" />
                 </TreeViewItem>
                 <TreeViewItem Header="Isle Two">
                     <TreeViewItem Header="Something" />
                 </TreeViewItem>
-                <TreeViewItem Header="Isle Three">
+                <TreeViewItem Header="Isle Three" Name="three">
                     <TreeViewItem Header="Testing" />
                     <TreeViewItem Header="Some Stuff" />
                     <TreeViewItem Header="Isle Three A">
